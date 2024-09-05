@@ -122,7 +122,7 @@ const App = () => {
                 </div>
                 <div className="project-item">
                     <h3>Hotel Reservation App - CheckInn</h3>
-                    <p>Веб апликација во React и Django за резервација</p>
+                    <p>Веб апликација во React и Java за резервација</p>
                 </div>
             </section>
 
