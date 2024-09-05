@@ -118,7 +118,7 @@ const App = () => {
                 </div>
                 <div className="project-item">
                     <h3>Planner App</h3>
-                    <p>Веб апликација со HTML, CSS, JavaScript за управување со задачи и активности.</p>
+                    <p>Веб апликација со HTML, CSS, JavaScript, React за управување со задачи и активности.</p>
                 </div>
                 <div className="project-item">
                     <h3>Hotel Reservation App - CheckInn</h3>
