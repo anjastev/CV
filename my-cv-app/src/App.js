@@ -1,5 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './App.css';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import AboutMe from './AboutMe';
+import { useEffect } from 'react';
 
 const App = () => {
   useEffect(() => {
@@ -24,6 +27,7 @@ const App = () => {
   };
 
   return (
+    <Router>
     <div className="App">
       
       <header className="navbar">
@@ -42,9 +46,12 @@ const App = () => {
       <section className="banner">
         <h1 className="banner-title">Добредојде во мојот свет!</h1>
         <p className="banner-subtitle"></p>
-        <a href="#about" className="btn-banner">Запознај Ме</a>
+        <Link to="/aboutme" className="btn-banner">Запознај Ме</Link>
       </section>
-
+       
+      <Routes>
+          <Route path="/aboutme" element={< AboutMe />} />
+        </Routes>
      
       <section id="about" className="about-section">
         <h2>За Мене</h2>
@@ -117,7 +124,7 @@ const App = () => {
       <h3>👨‍💻 Програмирање:</h3>
       <ul>
         <li>💾 C++</li>
-        <li>☕ Java</li>
+        <li>☕ Java (Spring Boot)</li>
         <li>🌐 JavaScript</li>
         <li>⚛️ React</li>
         <li>🌟 HTML, CSS</li>
@@ -201,6 +208,7 @@ const App = () => {
         <p>👩‍💻 Изработено од Anja Stevkovska | © 2024</p>
       </footer>
     </div>
+     </Router>
   );
 };
 
