@@ -197,6 +197,23 @@ body {
   color: #3D9061;
 }
 
+.project-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #ff5a5f; /* Button background color */
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.project-button:hover {
+  background-color: #e0484e; /* Hover effect */
+}
 
 
 
