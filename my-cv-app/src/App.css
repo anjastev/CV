@@ -358,8 +358,7 @@ ul li {
 }
 
 
-@media (max-width: 768px) {
-  /* Navbar */
+@media (max-width: 1200px) {
   .navbar nav ul {
     display: none;
   }
@@ -387,16 +386,17 @@ ul li {
     display: block;
     padding: 0.5rem;
     color: white;
-    transition: background-color 0.3s ease;
   }
 
   .nav-links.active li a:hover {
     background-color: #FC7484;
   }
+}
 
-  /* Banner */
+/* За екрани до 768px (таблети) */
+@media (max-width: 768px) {
   .banner {
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
   }
 
   .banner-title {
@@ -407,54 +407,96 @@ ul li {
     font-size: 1rem;
   }
 
-  /* Sections */
   .about-section, .projects-section, .contact-section {
     padding: 2rem 1rem;
   }
 
-  /* Grid for Projects */
-  .projects-list, .info-grid, .projects-grid {
-    display: block;
+  .info-grid, .projects-list {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  /* Употреба на целосни ширини на екранот */
+  .about-section, .projects-section, .contact-section {
     width: 100%;
+    padding: 1.5rem;
   }
 
-  .info-item, .project-item {
-    margin-bottom: 1rem;
-  }
-
-  /* Footer */
   .footer {
-    padding: 1rem;
+    padding: 1.5rem;
+    text-align: center;
   }
 }
 
-/* Extra small screens */
-@media (max-width: 480px) {
-  /* Banner */
+/* За екрани до 576px (мали уреди, како iPhone) */
+@media (max-width: 576px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .navbar nav ul {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links.active {
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #3D9061;
+    width: 200px;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .nav-links.active li {
+    margin: 0;
+  }
+
+  .nav-links.active li a {
+    display: block;
+    padding: 0.5rem;
+    color: white;
+  }
+
+  .nav-links.active li a:hover {
+    background-color: #FC7484;
+  }
+
+  .banner {
+    padding: 3rem 1rem;
+  }
+
   .banner-title {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 
   .banner-subtitle {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
 
   .btn-banner {
-    font-size: 0.875rem;
     padding: 0.5rem 1rem;
   }
 
-  /* Sections */
   .about-section, .projects-section, .contact-section {
-    padding: 1.5rem 1rem;
+    padding: 1.5rem;
     width: 100%;
+  }
+
+  .info-grid, .projects-list {
+    grid-template-columns: 1fr;
   }
 
   .project-item h3 {
     font-size: 1.25rem;
   }
 
-  .project-item p {
-    font-size: 0.875rem;
+  .footer {
+    padding: 1rem;
+    text-align: center;
   }
 }
