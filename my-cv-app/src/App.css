@@ -356,3 +356,105 @@ ul li {
 .skill-category ul li {
   margin-bottom: 0.5rem;
 }
+
+
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar nav ul {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links.active {
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #3D9061;
+    width: 200px;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .nav-links.active li {
+    margin: 0;
+  }
+
+  .nav-links.active li a {
+    display: block;
+    padding: 0.5rem;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+
+  .nav-links.active li a:hover {
+    background-color: #FC7484;
+  }
+
+  /* Banner */
+  .banner {
+    padding: 2rem 1rem;
+  }
+
+  .banner-title {
+    font-size: 2rem;
+  }
+
+  .banner-subtitle {
+    font-size: 1rem;
+  }
+
+  /* Sections */
+  .about-section, .projects-section, .contact-section {
+    padding: 2rem 1rem;
+  }
+
+  /* Grid for Projects */
+  .projects-list, .info-grid, .projects-grid {
+    display: block;
+    width: 100%;
+  }
+
+  .info-item, .project-item {
+    margin-bottom: 1rem;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 1rem;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  /* Banner */
+  .banner-title {
+    font-size: 1.5rem;
+  }
+
+  .banner-subtitle {
+    font-size: 0.875rem;
+  }
+
+  .btn-banner {
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+  }
+
+  /* Sections */
+  .about-section, .projects-section, .contact-section {
+    padding: 1.5rem 1rem;
+    width: 100%;
+  }
+
+  .project-item h3 {
+    font-size: 1.25rem;
+  }
+
+  .project-item p {
+    font-size: 0.875rem;
+  }
+}
