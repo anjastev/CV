@@ -415,7 +415,8 @@ ul li {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 
-  /* Употреба на целосни ширини на екранот */
+
+  
   .about-section, .projects-section, .contact-section {
     width: 100%;
     padding: 1.5rem;
@@ -427,7 +428,7 @@ ul li {
   }
 }
 
-/* За екрани до 576px (мали уреди, како iPhone) */
+
 @media (max-width: 576px) {
   .navbar {
     padding: 1rem;

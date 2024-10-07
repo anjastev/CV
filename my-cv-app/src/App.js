@@ -58,8 +58,6 @@ const App = () => {
        
         <div className="info-grid">
           <div className="info-item"><strong>Име и презиме:</strong> 👤 Ања Стевковска</div>
-          <div className="info-item"><strong>Адреса:</strong> 📍 ул. 10 бр. 11, Јурумлери, Скопје</div>
-          <div className="info-item"><strong>Телефон:</strong> 📞 070371005</div>
           <div className="info-item"><strong>Е-пошта:</strong> 📧 Stevkovskaanja@gmail.com</div>
           <div className="info-item"><strong>Пол:</strong> 👩 женски</div>
           <div className="info-item"><strong>Датум на раѓање:</strong> 🎂 11/07/2003</div>
