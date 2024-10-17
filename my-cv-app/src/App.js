@@ -62,6 +62,7 @@ const App = () => {
           <div className="info-item"><strong>Пол:</strong> 👩 женски</div>
           <div className="info-item"><strong>Датум на раѓање:</strong> 🎂 11/07/2003</div>
           <div className="info-item"><strong>Националност:</strong> 🇲🇰 Македонка</div>
+          
         </div>
       </section>
        
@@ -119,7 +120,7 @@ const App = () => {
   <h2 className="section-title">💻 Компјутерски Вештини</h2>
   <div className="skills-grid">
     <div className="skill-category">
-      <h3>👨‍💻 Програмирање:</h3>
+      <h3>👨‍💻 Програмирање</h3>
       <ul>
         <li>💾 C++</li>
         <li>☕ Java (Spring Boot)</li>
@@ -131,7 +132,7 @@ const App = () => {
     </div>
 
     <div className="skill-category">
-      <h3>🎨 Дизајн Алатки:</h3>
+      <h3>🎨 Дизајн Алатки</h3>
       <ul>
         <li>🎨 Figma (UI/UX & Web Design)</li>
         <li>🖼️ Canva</li>
@@ -140,18 +141,7 @@ const App = () => {
     </div>
 
     <div className="skill-category">
-      <h3>📈 Маркетинг Алатки:</h3>
-      <ul>
-        <li>🔍 SEO (Оптимизација на пребарувачи)</li>
-        <li>💼 Google Ads</li>
-        <li>📊 Google Аналитика</li>
-        <li>🏷️ Google Tag Manager</li>
-        <li>📱 Social Media Marketing</li>
-      </ul>
-    </div>
-
-    <div className="skill-category">
-      <h3>🛠️ Други:</h3>
+      <h3>🛠️ Други</h3>
       <ul>
         <li>📑 MS Office пакетот</li>
         <li>🌐 Активно користење на социјални мрежи и интернет</li>
@@ -162,12 +152,12 @@ const App = () => {
      
 
 <section id="projects" className="projects-section">
-  <h2>Клучни Проекти</h2>
+  <h2>Проекти</h2>
   <div className="projects-grid">
     <div className="project-item">
-      <h3>✈️ TravelPlannerApp</h3>
-      <p>Веб апликација за планирање на патувања, развиена како дел од проект во прва година на факултетот. Апликацијата им овозможува на корисниците да креираат персонализирани планови за патување, да ги следат своите дестинации 🗺️, да поставуваат времиња и маршрути ⏳, и да прегледуваат препораки за хотели 🏨 и активности во избраните локации. TravelPlannerApp е изградена со HTML, CSS и JavaScript, и користи локално складирање за податоците на корисниците.</p>
-      <a href="https://webdesignproject.vercel.app/" class="project-button" target="_blank" rel="noopener noreferrer">Погледнете ја апликацијата</a>
+      <h3>🏨 Hotel Reservation App - CheckInn</h3>
+      <p>CheckInn е веб апликација за резервација на хотели, изградена користејќи React. Апликацијата им овозможува на корисниците да пребаруваат хотели според различни критериуми како локација 📍, цена 💸 и оценка ⭐, да прегледуваат детали за хотелите и да направат резервации. CheckInn исто така поддржува кориснички профили 👤, каде што корисниците можат да го следат статусот на своите резервации и да ги управуваат истите.</p>
+      <a href="https://hotel-reservations-pink.vercel.app/" class="project-button" target="_blank" rel="noopener noreferrer">Погледнете ја апликацијата</a>
     </div>
     <div className="project-item">
       <h3>📅 Обврски365</h3>
@@ -175,10 +165,11 @@ const App = () => {
       <a href="https://my-planner-app-eight.vercel.app/" class="project-button" target="_blank" rel="noopener noreferrer">Погледнете ја апликацијата</a>
     </div>
     <div className="project-item">
-      <h3>🏨 Hotel Reservation App - CheckInn</h3>
-      <p>CheckInn е веб апликација за резервација на хотели, изградена користејќи React за frontend и Java за backend. Апликацијата им овозможува на корисниците да пребаруваат хотели според различни критериуми како локација 📍, цена 💸 и оценка ⭐, да прегледуваат детали за хотелите и да направат резервации. CheckInn исто така поддржува кориснички профили 👤, каде што корисниците можат да го следат статусот на своите резервации и да ги управуваат истите.</p>
-      <a href="https://hotel-reservations-pink.vercel.app/" class="project-button" target="_blank" rel="noopener noreferrer">Погледнете ја апликацијата</a>
+      <h3>✈️ TravelPlannerApp</h3>
+      <p>Веб апликација за планирање на патувања, развиена како дел од проект во прва година на факултетот. Апликацијата им овозможува на корисниците да креираат персонализирани планови за патување, да ги следат своите дестинации 🗺️, да поставуваат времиња и маршрути ⏳, и да прегледуваат препораки за хотели 🏨 и активности во избраните локации. TravelPlannerApp е изградена со HTML, CSS и JavaScript, и користи локално складирање за податоците на корисниците.</p>
+      <a href="https://webdesignproject.vercel.app/" class="project-button" target="_blank" rel="noopener noreferrer">Погледнете ја апликацијата</a>
     </div>
+    
   </div>
 </section>
 

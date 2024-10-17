@@ -144,11 +144,13 @@ body {
   color: #3D9061;
 }
 
-.info-grid{
+
+.info-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
   gap: 1rem;
 }
+
 
 .projects-grid{
   display: flex;
@@ -393,7 +395,6 @@ ul li {
   }
 }
 
-/* За екрани до 768px (таблети) */
 @media (max-width: 768px) {
   .banner {
     padding: 3rem 1rem;
